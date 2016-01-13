@@ -10,9 +10,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <script type="text/javascript" src="http://language.pisiray.com/Script/jquery.carouFredSel-6.0.4-packed.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-      alert("Hi, Welcome to 2016 TAIWAN ELECTIONS");
-    });
+    $(function () {
+            $(".no1").click(function () {
+                var url = $(this).attr("href");
+                if (confirm("是否要刪除這筆資料?")) {
+                    $.post(url, function () {
+                        location.reload();
+                    });
+                }
+                return false;
+            });
+        });
+
     </script>
   </head>
   <body>
