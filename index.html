@@ -11,14 +11,8 @@
     <script type="text/javascript" src="http://language.pisiray.com/Script/jquery.carouFredSel-6.0.4-packed.js"></script>
     <script type="text/javascript">
     $(function () {
-            $(".no1").click(function () {
-                var url = $(this).attr("href");
-                if (confirm("是否要刪除這筆資料?")) {
-                    $.post(url, function () {
-                        location.reload();
-                    });
-                }
-                return false;
+            $(".deleteLink").click(function () {
+                alert("Hellow");
             });
         });
 
@@ -32,7 +26,7 @@
       <a href="https://github.com/kitschwin/2016TaiwanElections/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/kitschwin/2016TaiwanElections/tarball/master" class="btn">Download .tar.gz</a>
     </section>
-
+<a class="deleteLink">Test Javascrpit</a>
     <section class="main-content">
       <div class="no1">朱立倫
       <img src="https://scontent-tpe1-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/s2048x2048/12375041_10156420002225128_252157125966994574_o.jpg" >
